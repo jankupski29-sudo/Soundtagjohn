@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOUND TAG</title>
+
+<style>
+body {
+  background: black;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 80vw;
+  height: 80vw;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="playSound()">PLAY</button>
+
+<audio id="sound" src="sound.mp3"></audio>
+
+<script>
+function playSound() {
+  document.getElementById("sound").play();
+}
+</script>
+
+</body>
+</html>
